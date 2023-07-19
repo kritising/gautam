@@ -1,0 +1,94 @@
+
+   <main id="main">
+
+     <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Contact</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Contact</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-map"></i>
+              <h3>Our Address</h3>
+              <p>Gautam Complex,<br>Saranda Behind HotelThe World, <br>Barbil,Keonjhar,Odisha,758035</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>rajnishkmr083@gmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+91 9437011545</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+
+          <div class="col-lg-6 ">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.1096133843084!2d85.38408587420341!3d22.08363045071616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1fb9141d815571%3A0xe617b8471114a5a5!2sGAUTAM%20CONSTRUCTION!5e0!3m2!1sen!2sin!4v1670482949327!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+          <form id="request" [formGroup]="addContact" class="main_form"
+                #usersForm="ngForm" (ngSubmit)="getUserData(usersForm.value)">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" ngModel placeholder="Name" type="type" name="Name" formControlName="name">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" ngModel placeholder="Phone" type="type" name="Phone" formControlName="phone">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" ngModel placeholder="Email" type="email" formControlName="email" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" ngModel placeholder="Message" type="type" formControlName="message" name="Message">Message</textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+
+     </main><!-- End #main -->
+      <!--  footer -->
+
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="/assets/js/jquery.min.js"></script>
+      <script src="/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/assets/js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/assets/js/custom.js"></script>
+

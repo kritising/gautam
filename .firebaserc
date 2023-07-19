@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "future-pulsar-382408"
+  },
+  "targets": {
+    "gautamconstruction-6bbee": {
+      "hosting": {
+        "angular.io-example": [
+          "gautamconstruction-6bbee"
+        ]
+      }
+    }
+  }
+}
