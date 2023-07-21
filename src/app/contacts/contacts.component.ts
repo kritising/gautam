@@ -18,14 +18,14 @@ export class ContactsComponent{
 
   contact: any;
 addContact=new FormGroup( {
-  name: new FormControl(''),
+  name: new FormControl('', [Validators.required]),
   phone: new FormControl(''),
-  email: new FormControl(''),
-  message: new FormControl('')
+  email: new FormControl('', [Validators.required]),
+  message: new FormControl('', [Validators.required])
 
 
 });
-  constructor(private servicesService: ServicesService) {}
+  constructor(private servicesService: ServicesService, private builder: FormBuilder) {}
 
 
 
