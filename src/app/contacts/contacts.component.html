@@ -58,19 +58,19 @@
                 #usersForm="ngForm" (ngSubmit)="getUserData(usersForm.value)">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" ngModel placeholder="Name" type="type" name="Name" formControlName="name">
+                           <input class="contactus" ngModel placeholder="Name" type="type" name="Name" formControlName="name" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" ngModel placeholder="Phone" type="type" name="Phone" formControlName="phone">
+                           <input class="contactus" ngModel placeholder="Phone" type="type" name="Phone" formControlName="phone" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" ngModel placeholder="Email" type="email" formControlName="email" name="Email">
+                           <input class="contactus" ngModel placeholder="Email" type="email" formControlName="email" name="Email" required>
                         </div>
                         <div class="col-md-12">
-                           <textarea class="contactus" ngModel placeholder="Message" type="type" formControlName="message" name="Message">Message</textarea>
+                           <textarea class="contactus" ngModel placeholder="Message" type="type" formControlName="message" name="Message" required>Message</textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn" type="submit">Send</button>
+                           <button class="send_btn"  type="submit">Send</button>
                         </div>
                      </div>
                   </form>

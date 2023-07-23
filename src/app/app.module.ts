@@ -26,13 +26,14 @@ import { ServiceDetailsComponent } from './service-details/service-details.compo
     HomeComponent,
     ProjectDetailsComponent,
     ServiceDetailsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [ServicesService],

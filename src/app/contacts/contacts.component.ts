@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angula
 import { Contact } from '../contact';
 import { ServicesService } from '../services.service';
 
+
 import { HttpClient } from '@angular/common/http';
 
 
@@ -14,7 +15,8 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
-export class ContactsComponent{
+export class ContactsComponent {
+
 
   contact: any;
 addContact=new FormGroup( {
@@ -26,6 +28,7 @@ addContact=new FormGroup( {
 
 });
   constructor(private servicesService: ServicesService, private builder: FormBuilder) {}
+
 
 
 
