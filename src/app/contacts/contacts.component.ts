@@ -17,11 +17,11 @@ import { HttpClient } from '@angular/common/http';
 export class ContactsComponent {
 
  contactForm: FormGroup= this.fb.group({
-   name: 'name',
-  to_name:'name',
-   email: 'email',
+   name: '',
+  to_name:'',
+   email: '',
    phone: 'your number',
-   message: 'message'
+   message: ''
 
 
   });
