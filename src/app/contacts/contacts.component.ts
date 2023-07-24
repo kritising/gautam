@@ -4,8 +4,7 @@ import { Location } from '@angular/common';
 import { FormGroup, FormBuilder, FormControl, Validators, NgForm } from '@angular/forms'
 import { Contact } from '../contact';
 import { ServicesService } from '../services.service';
-
-
+import emailjs from '@emailjs/browser';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -17,27 +16,33 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactsComponent {
 
+ contactForm: FormGroup= this.fb.group({
+   name: 'name',
+  to_name:'name',
+   email: 'email',
+   phone: 'your number',
+   message: 'message'
 
-  contact: any;
-addContact=new FormGroup( {
-  name: new FormControl('', [Validators.required]),
-  phone: new FormControl(''),
-  email: new FormControl('', [Validators.required]),
-  message: new FormControl('', [Validators.required])
 
-
-});
-  constructor(private servicesService: ServicesService, private builder: FormBuilder) {}
-
+  });
+  constructor(private servicesService: ServicesService, private http: HttpClient,private fb: FormBuilder) {}
 
 
 
-  getUserData(data:any)
-  {
-  console.log(this.addContact.value);
-    console.warn(data)
-    this.servicesService.saveUser(data).subscribe(result => console.warn(result));
-  }
 
 
+
+  async onSubmit() {
+    emailjs.init('Xb35lcy5Fral6M5CG');
+  let response =await emailjs.send("service_c2o7e2b","template_de5z6yi",{
+    name: this.contactForm.value.name,
+    to_name: this.contactForm.value.name,
+    phone: this.contactForm.value.phone,
+    email: this.contactForm.value.email,
+    message: this.contactForm.value.message,
+     });
+
+  alert('Message has been send.');
+  this.contactForm.reset();
+}
 }

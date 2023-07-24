@@ -53,21 +53,22 @@
                 <!-- End Google Maps -->
 </div>
 
-          <div class="col-lg-6">
-          <form id="request" [formGroup]="addContact" class="main_form"
-                #usersForm="ngForm" (ngSubmit)="getUserData(usersForm.value)">
+  <div class="col-lg-6">
+          <form id="request" action="javascript:void(0)"  class="main_form" [formGroup]="contactForm"
+               (ngSubmit)="onSubmit()">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus"  placeholder="Name" type="text" name="Name" formControlName="name" required>
+                           <input class="contactus" formControlName="name" placeholder="Name" type="text" id="name" name="name" required>
+
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus"  placeholder="Phone" type="number" name="Phone" formControlName="phone" required>
+                           <input class="contactus" formControlName="phone" id="phone" placeholder="Phone" type="number" name="phone"  required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus"  placeholder="Email" type="email" formControlName="email" name="Email" required>
+                           <input class="contactus" formControlName="email"  id="email" placeholder="Email" type="email"  name="email" required>
                         </div>
                         <div class="col-md-12">
-                           <textarea class="contactus"  placeholder="Message" type="textarea" formControlName="message" name="Message" required>Message</textarea>
+                           <textarea class="contactus" formControlName="message" id="message" placeholder="Message" type="textarea"  name="Message" required></textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn"  type="submit">Send</button>
@@ -80,7 +81,7 @@
         </div>
 
       </div>
-      </div>
+</div>
     </section><!-- End Contact Section -->
 
 
