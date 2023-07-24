@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-world';
+
+  showMobileNav = false;
+
+  constructor() { }
+
+  toggleMobileNav() {
+    this.showMobileNav = !this.showMobileNav;
+  }
+
+  onLinkClick() {
+    // Hide the mobile navigation toggle icons when a link is clicked
+    this.showMobileNav = false;
+  }
 }

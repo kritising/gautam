@@ -12,12 +12,12 @@ import { catchError } from 'rxjs/operators';
 })
 export class ServicesService {
 
-  url = "https://localhost:3000/user";
+  url = "http://localhost:3000/user";
 
   constructor(private http: HttpClient)
   {}
 
-  
+
   user(){
     return this.http.get(this.url);
   }

@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
    * Mobile nav toggle
    */
 
+
+
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavShow.classList.toggle('d-none');
     mobileNavHide.classList.toggle('d-none');
+
   }
 
   /**
@@ -90,6 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  const scrollButton = document.querySelector('.scroll-top');
+
+  scrollButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   /**
    * Initiate glightbox
    */

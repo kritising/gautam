@@ -1,5 +1,25 @@
 <!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1><span>Gautam Construction</span></h1>
+    </a>
+
+    <i  class="mobile-nav-toggle mobile-nav-show bi bi-list" (click)="toggleMobileNav()"></i>
+    <i  class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" (click)="toggleMobileNav()"></i>
+    <nav class="navbar">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/service">Services</a></li>
+      <li><a href="/project">Projects</a></li>
+      <li><a href="/contacts">Contact</a></li>
+    </ul>
+  </nav>
+
+  </div>
+</header>
 
 <router-outlet></router-outlet>
 
@@ -79,4 +99,3 @@
 </div>
 
 </footer>
-<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
