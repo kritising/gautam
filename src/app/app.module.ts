@@ -12,7 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './Home/Home.component';
 import { HttpClientModule } from '@angular/common/http';
 import {  ReactiveFormsModule } from '@angular/forms';
-
+import { ReloadOnClickDirective } from './reload-on-click.directive';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 
@@ -26,7 +26,8 @@ import { ServiceDetailsComponent } from './service-details/service-details.compo
     AboutComponent,
     HomeComponent,
     ProjectDetailsComponent,
-    ServiceDetailsComponent
+    ServiceDetailsComponent,
+     ReloadOnClickDirective
 
   ],
   imports: [
