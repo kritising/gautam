@@ -12,9 +12,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'hello-world';
 
-  onLinkClick() {
-    console.log('Link clicked');
-    
+  onLinkClick(url: string): void {
+    // Use window.location.href to navigate to the specified URL.
+    window.location.href = url;
   }
 
 }
