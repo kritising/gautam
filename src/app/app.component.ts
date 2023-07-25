@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +12,9 @@ import { Location } from '@angular/common';
 export class AppComponent {
   title = 'hello-world';
 
-
-  constructor(private location: Location) {}
-
-
-
+  onLinkClick() {
+    console.log('Link clicked');
+    
+  }
 
 }
